@@ -12,44 +12,69 @@
         header {
             background-color: #1e293b;
             color: white;
-            padding: 35px;
+            padding: 40px;
             text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
         }
 
         section {
             padding: 50px;
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
         }
 
         .project {
             background: #ffffff;
-            padding: 20px;
-            margin-bottom: 25px;
+            padding: 25px;
+            margin-bottom: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
             border: 1px solid #e3e8ef;
             text-align: center;
         }
 
         .project:hover {
-            transform: translateY(-3px);
-            transition: 0.2s ease;
+            transform: translateY(-4px);
+            transition: 0.25s ease;
         }
 
         .project img, .project video {
-            width: 85%;
+            width: 100%;
+            max-width: 1000px;
             display: block;
-            margin: 15px auto;
+            margin: 20px auto;
             border-radius: 8px;
+        }
+
+        .project img:hover {
+            transform: scale(1.03);
+            transition: 0.2s ease;
         }
 
         h2 {
             color: #1f2a44;
+            margin-top: 40px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
         }
 
         a {
             color: #2563eb;
+        }
+
+        .tagline {
+            margin-top: 10px;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -59,41 +84,68 @@
 <header>
     <h1>Rayan Kotowaroo</h1>
     <p>Fourth-Year Mechanical Engineering Student | Project Management | Data Analysis | Manufacturing Systems</p>
+    <p class="tagline">Focus: Fluid Systems | Process Optimization | Manufacturing & Quality Engineering</p>
 </header>
 
 <section>
 
 <h2>About Me</h2>
 <p>
-Fourth-year Mechanical Engineering student with strong experience in project coordination, data analysis, and manufacturing systems. Focused on optimizing workflows, improving operational efficiency, and delivering data-driven solutions in engineering environments.
+Fourth-year Mechanical Engineering student with strong experience in project coordination, data analysis, and manufacturing systems. Focused on optimizing workflows, improving operational efficiency, and delivering data-driven engineering solutions.
 </p>
 
 <h2>Projects</h2>
 
 <div class="project">
     <h3>MARS Rocket Competition – Project Management & Flight Optimization</h3>
-    <p>Led a 6-member multidisciplinary team, managing timelines and tracking milestones to ensure successful design, testing, and launch execution under strict constraints.</p>
+
+    <p class="highlight">Key Impact: Achieved ~300 m apogee with stable flight (1.5–2.5 calibers), validating aerodynamic and structural design.</p>
+
+    <p><strong>Tools:</strong> SolidWorks, MATLAB, OpenRocket</p>
+
+    <p>
+    Led a 6-member multidisciplinary team, managing timelines and tracking milestones to ensure successful design, testing, and launch execution under strict constraints.
+    </p>
+
     <img src="rocket.jpg">
-    
-    <video width="85%" controls>
+
+    <video controls>
       <source src="rocket.mp4" type="video/mp4">
     </video>
-    
 </div>
 
 <div class="project">
     <h3>Industrial Fluid System Optimization</h3>
-    <p>Analyzed system performance (flow rate, head loss, efficiency) using Excel and Power BI to evaluate configurations and support data-driven optimization decisions.</p>
+
+    <p class="highlight">
+    Key Impact: Reduced TDH from 60.9 m → 31.4 m, achieving 35.7% cost reduction (~$137k → ~$88k) while eliminating cavitation risk through NPSH validation.
+    </p>
+
+    <p><strong>Tools:</strong> Excel, Power BI, MATLAB</p>
+
+    <p>
+    Applied hydraulic analysis (Darcy–Weisbach, TDH, NPSH) and evaluated multiple system configurations to optimize performance and cost. 
+    Integrated Lean Six Sigma methodologies (DMAIC, PFMEA, 8D) to identify failure modes, reduce risk, and support structured process improvement.
+    </p>
+
     <img src="fluid.jpg">
-    
     <img src="Lean.jpg">
 </div>
 
 <div class="project">
     <h3>Manufacturing & Process Analysis</h3>
-    <p>Applied Lean and 5S principles to analyze workflows, identify inefficiencies, and improve process consistency and operational efficiency.</p>
+
+    <p class="highlight">
+    Key Impact: Improved workflow efficiency and process consistency through Lean analysis and structured process evaluation.
+    </p>
+
+    <p><strong>Tools:</strong> Excel, Lean Six Sigma, Process Mapping</p>
+
+    <p>
+    Applied Lean and 5S principles to analyze workflows, identify inefficiencies, and improve process consistency and operational efficiency.
+    </p>
+
     <img src="Manufacturing6Sigma.jpg">
-    
     <img src="ManufacturingProcess.jpg">
 </div>
 
@@ -105,14 +157,13 @@ Statistics, Engineering Economics, Mechanics of Machines
 
 <h2>Technical Skills</h2>
 
-<p><strong>Data & Tools:</strong> Excel (Pivot Tables, XLOOKUP), Power BI (Power Query, DAX)</p>
+<p><strong>Data & Tools:</strong> Microsoft Suite (Excel, PowerPoint, Word), Power BI (Power Query, DAX)</p>
 
 <p><strong>Programming:</strong> C, MATLAB</p>
 
-<p><strong>Engineering:</strong> Data Analysis, Lean & 5S</p>
+<p><strong>Engineering:</strong> Data Analysis, Lean & 5S, Process Optimization</p>
 
 <p><strong>Additional:</strong> Project Management, Workflow Optimization, Performance Tracking</p>
-
 
 <h2>Resume</h2>
 <p><a href="resume.pdf">Download Resume</a></p>
@@ -121,9 +172,8 @@ Statistics, Engineering Economics, Mechanics of Machines
     
 <h2>Contact</h2>
 
-<p><strong>Email: </strong>rayankotowaroo@email.com</p>
-
-<p><strong>Phone Number: </strong>+1 (647) 636-0715</p>
+<p><strong>Email:</strong> rayankotowaroo@gmail.com</p>
+<p><strong>Phone Number:</strong> +1 (647) 636-0715</p>
 
 </section>
 
